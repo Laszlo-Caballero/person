@@ -2,9 +2,17 @@ import { Type } from 'class-transformer';
 import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 export class CreatePersonDto {
-  @IsString()
   @IsNotEmpty()
+  @IsString()
   name: string;
+
+  @IsNotEmpty()
+  @IsString()
+  lastName: string;
+
+  @IsNotEmpty()
+  @IsString()
+  gender: string;
 
   @IsNotEmpty()
   @IsNumber()

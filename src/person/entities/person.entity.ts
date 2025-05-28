@@ -8,6 +8,10 @@ export class Person {
   @Column()
   name: string;
   @Column()
+  lastName: string;
+  @Column()
+  gender: string;
+  @Column()
   age: number;
   @Column()
   phone: string;
